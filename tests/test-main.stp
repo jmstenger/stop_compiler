@@ -1,0 +1,11 @@
+/*
+ * test-main.stp
+ * =============
+ * Tests argc & argv functionality
+ */
+
+def main = (argc:Int, argv:String[]):Int {
+	printf("%d\n", argc);
+	printf("%s\n", argv[0]);
+	return 0;
+}

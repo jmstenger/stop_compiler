@@ -1,0 +1,13 @@
+/*
+ * test-if.stp
+ * ==============
+ */
+
+def main = ():Int {
+        if(true){
+		printf("Hallo");
+	}else{
+		printf("Bye");
+	}
+        return 0;
+}

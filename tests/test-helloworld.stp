@@ -1,0 +1,10 @@
+/*
+ * test-helloworld.stp
+ * ===================
+ * The hello world program for the stop language
+ */
+
+def main = ():Int {
+	printf("Hello, World!");
+	return 0;
+}

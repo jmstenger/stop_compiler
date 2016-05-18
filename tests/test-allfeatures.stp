@@ -1,0 +1,96 @@
+/*
+ * test-allfeatures1.stp
+ * =====================
+ * Outlines every language feature that we plan to implement as of 3/26/2016
+ */
+
+spec CanPrint {
+	//type is the type in question
+	impl type.toString():String || type:String;
+}
+
+function print = (a:CanPrint):Unit{
+	printf(a.toString());
+	return;
+}
+
+class Person {
+	pub var weight:Int;
+	pub var other_function:Fun(Int)->Int = @(a:Int):Int {
+
+
+	//this has to be done if we want to access these in our methods
+	pub var name:String; 
+
+	// this can be matched like Person(x,y) , this is a
+	// pattern constructor
+	pattern = (weight:Int, name:String){	
+		This.weight= weight; 
+		This.name= name;     
+	}
+
+	pub def printName = ():Unit {
+		print(This.name);
+	}
+
+	pub def toString = ():String {
+		//this we will need to case out why this is valid 
+		"(" + weight + ", " + name + ")"; 
+	}
+}
+
+function pattern_matching = (a:Person):String {
+	match(a){ 
+
+		//these returns should not be necessary
+		case Person(x,"James") => { return "Hello!"; } 
+
+		case Person(x,y) => { return y; }
+
+	} 
+	//this is the last expression, really for loops and all should just be expressions which 
+	//return unit
+}
+
+function MAIN = (args:String[]):Unit {
+	// Let a be a person object 
+	var a:Person = Person(100,"James");
+
+	//use of anon function, captures 
+	//will be given a fake name but
+	//when assigned we replace that name with "IamAfunction". 
+	//(this is kinda fuzzy)
+
+	var fun1:Fun(Int)->Int;
+	var fun2:Fun(Int)->Int = @(c:Int):Int{ 
+		var fun3:Fun( = @
+		c * a.weight 
+	};
+
+	fun1 = fun2;
+
+	var fun3 = @(b:Int):Int { b * a.weight };
+
+	// prints out "Hello!", eager evaluation
+	// the spec is invoked to check if type String is is either a String
+	// or implements the toString method, this happens at compile time,
+	// we need to reach into a and get its type in order to check the 
+	// spec against it
+	print(pattern_matching(a)); 
+
+	// prints out "(100, James)", in order to be added to a string you need to implement the 
+	// still working out the type changing which is going on here with the Int + String	
+	// the operator+ method is overloaded for Int 
+	// the compiler pretends as if
+	//
+	// class Int {
+	//		pub operator+ = (q:String):String {
+	//			this.toString() + q //now this is legit
+	//		}
+	//
+	//  }
+	print(a); 	  
+
+	print(iamAfunction(3)); //prints out 300
+	return 0;
+}

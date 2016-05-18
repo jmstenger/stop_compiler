@@ -1,0 +1,586 @@
+commit f90eed8053b2a6371bac4433f4810353388a899d
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 12 16:46:46 2016 +0000
+
+    stable; fixed fib dynamic; minor return function changes
+
+commit 4fd1462b472b1f340e70c5ba918ef1f14bb1494e
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Wed May 11 21:09:07 2016 +0000
+
+    stable; changed to not malloc
+
+commit 11848dd89228388d666357d6a4c36b355a547127
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Wed May 11 21:04:06 2016 +0000
+
+    stable; fixed arrays per Lusa's change
+
+commit e939843308349c2a5c59345820c1341f482efd8b
+Author: Jonathan Barrios <jeb2239@columbia.edu>
+Date:   Wed May 11 15:57:49 2016 -0400
+
+    try to make this work
+
+commit e56f386cc52bf29fc133af6da406873525d7e47a
+Author: Jonathan Barrios <jeb2239@columbia.edu>
+Date:   Wed May 11 15:48:48 2016 -0400
+
+    fixed naming issue
+
+commit 5123fac20045e6d17d3e4083de209d59a22fb682
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Wed May 11 19:03:02 2016 +0000
+
+    stable; nested functions functional - returning functions
+
+commit d5dc5f501c30911562be5f36b8673af1bfed40f7
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Wed May 11 18:53:33 2016 +0000
+
+    stable; roadmap2 functional & working (access vars outside of function definition); but still writing that functionality so only works up one layer
+
+commit ec78ebff49d94591bdac408999d2c1d4e153e8cf
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Wed May 11 16:54:44 2016 +0000
+
+    stable; added roadmaps; now passing access links; TODO: resolve vars named outside of scope to access accesslinks to reach them (in semant); also roadmap3 as stretch goal
+
+commit 6372654bf1c9f7e72aa96cf53575c1a44a46bdcf
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Wed May 11 16:35:28 2016 +0000
+
+    stable; resolved function definition/assignment issue (ftype needed to be same, args were in reverse order in codegen lltype of ftype
+
+commit 9991d64d5a79c5f88d01df2c03f101c423f77ede
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Wed May 11 14:19:46 2016 +0000
+
+    saved stuff
+
+commit 8c665e5f3e1f3a3b095ccd27d16ac144c884a361
+Merge: f52e5f2 a864752
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Wed May 11 01:45:57 2016 +0000
+
+    unstable; resolved merge conflict
+
+commit f52e5f2b3ff55d57e8d050f2c0be474f3c9d89d8
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Wed May 11 01:39:55 2016 +0000
+
+    test updates
+
+commit a8647527166a2cfb5b3b0460ffc9ca100678a5f0
+Author: Lusa <lusa_zhan@yahoo.de>
+Date:   Wed May 11 00:52:34 2016 +0000
+
+    not working: float not stored
+
+commit 1ce1a3a2a7ce67c05a8322014f150ecf0e5ec1bb
+Author: Lusa <lusa_zhan@yahoo.de>
+Date:   Tue May 10 23:21:43 2016 +0000
+
+    float binary ops test - fail
+
+commit 67ee01042a5886eea6a9aba4e950419dbef90455
+Author: Jonathan Barrios <jeb2239@columbia.edu>
+Date:   Sat May 7 15:03:48 2016 -0400
+
+    added sizeof
+
+commit 5b7a826431870afd8c592d6f03daa52bab512b4b
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Sat May 7 16:28:24 2016 +0000
+
+    stable
+
+commit 3bc566bcb07c19cade0e7b094962ce142d1945d5
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Sat May 7 16:13:59 2016 +0000
+
+    stable; added calling logic for passing records
+
+commit dc2addf21adfe4121a3b8f7c542496fbafee89c6
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Sat May 7 06:05:39 2016 +0000
+
+    unstable; asymptoticall close to finishing nested functions: needed to add access link parameter to record structs and add access resolution in analysis
+
+commit 4f9758ae66ba7cd264f2eef904d04dd02bd10aac
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Sat May 7 05:25:38 2016 +0000
+
+    stable; nested functions functional, everything using activation records properly
+
+commit 0fbcc46a999f56613d403f3487fce407837445a8
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Sat May 7 04:58:07 2016 +0000
+
+    stable; var function calls are now working again
+
+commit 8e28fd122100c0886697f016c63b028b13165cb4
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Sat May 7 04:18:28 2016 +0000
+
+    stable; resolved object allocation issues
+
+commit 14c1d1d8e9ba7e5076fb2bf9a17e1b4c552a3a76
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Sat May 7 02:18:07 2016 +0000
+
+    unstable; test-temp issue needs to be resolved before progressing (note we're trying to access record.b.a-- what is the problem?
+
+commit bffefb55ecbfc50d706f10f9825a1b81892c6417
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Sat May 7 01:57:18 2016 +0000
+
+    unstable; need to resolve issue with test-temp before finishing nested functions (access struct through struct
+
+commit 59cc3a6537d8c4e6a9434b4659cee076ecc92a06
+Author: Lusa <lusa_zhan@yahoo.de>
+Date:   Fri May 6 23:25:07 2016 +0000
+
+    break, continue working now
+
+commit 09695d08e1164d95fb20e330dbe87daa736cf631
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Fri May 6 22:09:38 2016 +0000
+
+    unstable; most features now using records (need to add for calls, object access)
+
+commit e2aaefe649c11c43341e55e6151929a4cf5f42f6
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Fri May 6 21:54:53 2016 +0000
+
+    trying to convert locals to access record instead of new allocs
+
+commit e7f44af10e3f8d92e67278ccfb29ef548cc76e60
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Fri May 6 21:33:39 2016 +0000
+
+    stable; all functions now allocate an activation record on start
+
+commit e8607c7e7125c67aaf929353857e3e757cdd229c
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Fri May 6 21:16:59 2016 +0000
+
+    stable; analysis now correctly generating records and named values; only remaining nested functions task is adding hidden parameter and codegen access logic
+
+commit 6c985e529c9e5c2628045a25355cfee9f8c28448
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Fri May 6 21:06:34 2016 +0000
+
+    stable; analyzinng nested functions nearly-correctly
+
+commit 34d15ddc91cb94782cc29fda538824d8f3efcabe
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Fri May 6 19:54:26 2016 +0000
+
+    stable; nested2 functional but using vals outside of scope will require a bit more work
+
+commit 78742bbfbb7fe07408827e2610004cdaf14ded3b
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Fri May 6 19:50:43 2016 +0000
+
+    fixed higher-order function buildup bug in analysis
+
+commit 1d06f649ca989bf31181f792a7b4fcb90e836924
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Fri May 6 19:43:19 2016 +0000
+
+    stable; nested functions functional, not yet using activation records so named vals in upper scope not accessible
+
+commit 613ee19891bbdb19bf4c62dedab658e2746ff5ac
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Fri May 6 18:37:59 2016 +0000
+
+    stable; augmented sast printing functions; resolved function call of function var analysis issue; added nested test
+
+commit f3db0a85620a7d7fc1b9867860006ae96add595a
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Fri May 6 06:38:52 2016 +0000
+
+    added nested function test prog
+
+commit 6c325ac39b765e138609e90955c9587a6351b995
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Fri May 6 06:29:44 2016 +0000
+
+    resolved increment test issue (added ++ -- parsing)
+
+commit 7421a561e055b6e76215e61c502e4880b2f0784d
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Fri May 6 06:09:24 2016 +0000
+
+    revised controlflow8; note parse failure -> not language feature (C for instance requires variable declaration outside of loops)
+
+commit 3020856535b7bbec0bfb2d8c7243c4d9f179f4e2
+Merge: 43ed741 68d5d89
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Fri May 6 06:03:36 2016 +0000
+
+    Merge branch 'compiler_updates_everyone' of https://bitbucket.org/nottrainwreck/stop into compiler_updates_everyone
+
+commit 68d5d89f9d9a5d93a2ce8a17bbf248e6da0342f3
+Author: Lusa <lusa_zhan@yahoo.de>
+Date:   Fri May 6 04:07:00 2016 +0000
+
+    adding test for multidim array
+
+commit b777fc8735495f765a38e94cb7b9525171aec502
+Author: Jonathan Barrios <jeb2239@columbia.edu>
+Date:   Thu May 5 23:56:22 2016 -0400
+
+    hooray for array
+
+commit 838d1ccc377d891188f031b5e74a1f16b9652cae
+Author: Lusa <lusa_zhan@yahoo.de>
+Date:   Fri May 6 03:13:10 2016 +0000
+
+    array goes through analyzer, only codegen missing now
+
+commit bdfa92784b1ea818c08113b61d276f77cec9afcc
+Author: Lusa <lusa_zhan@yahoo.de>
+Date:   Fri May 6 02:21:05 2016 +0000
+
+    fixed a couple bugs from before
+
+commit 020b7e896dbace81f72e6e3fbd0526e2c0d96c67
+Author: Lusa <lusa_zhan@yahoo.de>
+Date:   Fri May 6 00:30:23 2016 +0000
+
+    added array create to parser, ast, utils
+
+commit 43ed74157f2f7f1fb89c2c57028f93a112e04fa8
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 21:12:57 2016 +0000
+
+    minor changes
+
+commit 78b7555f1f82f3b0467ecb4e5c72b53ae1627336
+Author: Lusa <lusa_zhan@yahoo.de>
+Date:   Thu May 5 20:00:39 2016 +0000
+
+    added array tests to array directory in tests
+
+commit c51c756e9676be808a42e2229410e1fadb160310
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 19:56:08 2016 +0000
+
+    stable; object access actually functional
+
+commit 061214632dd7f026ea46aa7c91cfea21742712a8
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 19:45:17 2016 +0000
+
+    stable; object access somewhat functional
+
+commit 0ea1fcfcec4916ce4f3178eeb449edcce86c2c3a
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 19:40:58 2016 +0000
+
+    accessing objects functional
+
+commit ae3ea4eaa154a39f51855aee11bb861758290b7e
+Author: Lusa <lusa_zhan@yahoo.de>
+Date:   Thu May 5 19:26:30 2016 +0000
+
+    more tests. increment & for(var i:Int=0;..) not working
+
+commit 4e11bc1f04f3d620805627427f6adb5334a9e46b
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 18:57:21 2016 +0000
+
+    stable; working on object & array declaration & accessing
+
+commit 1a48a9378aa12ab08f4e7ba5b0093b8e3f0b10ad
+Author: Lusa <lusa_zhan@yahoo.de>
+Date:   Thu May 5 18:45:25 2016 +0000
+
+    added some tests, not working: controlflow5 and controlflow 6
+
+commit d547fe22d50275e6a807a1ef543842e72343f084
+Author: Jonathan Barrios <jeb2239@columbia.edu>
+Date:   Thu May 5 14:10:08 2016 -0400
+
+    x86 for test-hang
+
+commit 76901c1f0b3f1017ddb7e70f6336118dd2619756
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 18:05:08 2016 +0000
+
+    stable; added hang and no_hang problem programs
+
+commit 67cd77154e111b07d656238f5181eada8f088b72
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 16:24:48 2016 +0000
+
+    stable; commented out fib_dynamic: currently hangs
+
+commit 5e59cbc6e05a4c1f5fa96bc1efdf299fb91e4bcb
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 16:23:27 2016 +0000
+
+    revised test script; now more useful
+
+commit e1ea637552c469988df3058214f8e1e524ff5e0b
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 16:07:02 2016 +0000
+
+    added unop codegen support
+
+commit 757a84cb0898aeb4885474e056564f54aa2f0678
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 15:41:31 2016 +0000
+
+    tried to resolve return type issue but having strange error; marked with TODO since still functional without resolve
+
+commit 3fb43d255f8fae8f77280248a4c570184891eb5e
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 15:23:09 2016 +0000
+
+    unstable (issue with fib_rec); resolved arrayaccess type issue
+
+commit 456e7aadc543c8ca1c421c3c15ac378da6fdbc97
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 15:06:55 2016 +0000
+
+    stable; added arrayaccess util printing
+
+commit ef3ca6b089c5d691f466a7ddcdd20d0f12ef6538
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 14:59:09 2016 +0000
+
+    resolved ast generation stmt order issue
+
+commit 5ad8d23990be3c27b8c9017a0290e5b27d1f383d
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 05:37:26 2016 +0000
+
+    stable; roadmark before refactoring nested functions
+
+commit 9dfa82b91aa8b9076710dd17f86eb3603d5bc899
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 04:56:57 2016 +0000
+
+    stable; added previously omitted while semant
+
+commit 2d531630dcef43a51cc711ec16d803aba9f1d7cd
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 04:50:31 2016 +0000
+
+    added all control flow stmts to semant + codegen
+
+commit 899da272207c686524f524ec3a1e3b09e2645f27
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 04:44:06 2016 +0000
+
+    added for semant + codegen
+
+commit 511dcd66fb11fbc7ce9e9665df48651571ad97ab
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 04:12:01 2016 +0000
+
+    added tests
+
+commit c73f43f5a0497a0c23cd52c8116099cc1b26b3e1
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Thu May 5 03:12:10 2016 +0000
+
+    added tests; fixed if with no else issue
+
+commit c45b65471e9f18ee9ab8d3a40626ac1d91cc074c
+Author: Jonathan Barrios <jeb2239@columbia.edu>
+Date:   Wed May 4 20:25:55 2016 -0400
+
+    will branch from here
+
+commit 5e0310bc0d492d64ad0bae31f276833f58c9fcde
+Author: Jonathan Barrios <jeb2239@columbia.edu>
+Date:   Wed May 4 20:15:31 2016 -0400
+
+    based on the output of printing the sast it seems that all of the SObjectAccess don't contain a proper object
+
+commit 3a021b920058a5d8720e8784a597272355c7a8ea
+Merge: e06fef5 e0b800e
+Author: Jonathan Barrios <jeb2239@columbia.edu>
+Date:   Wed May 4 19:04:50 2016 -0400
+
+    merged some stuff I forgot to merge
+
+commit e06fef5944ef24e9b32b7a32eb2bae5b2b94e3d5
+Merge: 5d772aa a84c5b0
+Author: Jonathan Barrios <jeb2239@columbia.edu>
+Date:   Wed May 4 18:53:19 2016 -0400
+
+    merged new james features, passing fname around, change if so that it works, this will compile
+
+commit e0b800ea331e8c84b0b7f51280afe0c941012607
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Wed May 4 20:59:51 2016 +0000
+
+    added desired testall output
+
+commit 7e97219e0824ce5d2e93c8635236194554016f90
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Wed May 4 20:55:23 2016 +0000
+
+    stable; minor revisions (no added functionality); added tests to indicate what needs to be developed
+
+commit 5d772aa521b1460465c5b686a544f064078a8a9e
+Author: Lusa <lusa_zhan@yahoo.de>
+Date:   Wed May 4 06:02:50 2016 +0000
+
+    added if & test for if
+
+commit da5253ccfd833117d5f1613189b0322fc39cf448
+Author: Jonathan Barrios <jeb2239@columbia.edu>
+Date:   Wed May 4 00:39:29 2016 -0400
+
+    string_of_sprogram, testing merged james changes
+
+commit 8f09db42ea707ac6fad7476c6a6a51946b7dbf15
+Merge: b6da64b da7f911
+Author: Jonathan Barrios <jeb2239@columbia.edu>
+Date:   Wed May 4 00:03:42 2016 -0400
+
+    Merge branch 'compiler_updates_jeb' into compiler_updates_everyone
+
+commit da7f911fe1788343c631903bec14a00d91aec4e2
+Author: Jonathan Barrios <jeb2239@columbia.edu>
+Date:   Tue May 3 23:52:24 2016 -0400
+
+    changes
+
+commit a84c5b047933204c32e69226c832dd1a68c2d978
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Wed May 4 03:50:59 2016 +0000
+
+    stable; functions now using heap-allocated activation records
+
+commit 41462263e902c1c12c8a72853df22d6407b0a4de
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Wed May 4 02:53:27 2016 +0000
+
+    test
+
+commit b6da64b44a68fd754eca3ce8416f9daac5f602f8
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Tue May 3 22:35:11 2016 +0000
+
+    unstable; function activation records now being generated
+
+commit 97d827f4d9cce7646938597ba7e1dedfc4065cf3
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Tue May 3 18:48:06 2016 +0000
+
+    unstable; correctly getting vars for each function record definition
+
+commit c2ae5feaf00f9d45f6b510074c7c55bf4ac20b91
+Author: Jonathan Barrios <jeb2239@columbia.edu>
+Date:   Tue May 3 11:08:31 2016 -0400
+
+    string_of_sprogram works and changed test-class1.stop to reflect correct class syntax
+
+commit 4dc8eab5e3cba769d769a22cc7e770703cd6cef6
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Tue May 3 06:16:34 2016 +0000
+
+    first order function calls & def. functional (?)
+
+commit 7d09a4033aa9732e5181228f14c027166fbd3f0e
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Tue May 3 05:58:17 2016 +0000
+
+    stable; getting segfault on test-temp
+
+commit efc3eb688d2706a99cad12d13820d56564d4068e
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Tue May 3 04:46:37 2016 +0000
+
+    stable; resolved semantic analysis reserved functions issue
+
+commit 8e284a4033225115d364ce4d2a587ab26f95aa96
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Tue May 3 04:12:05 2016 +0000
+
+    stable; test-temp pushed through semantic analysis; free to start work on higher-order function codegen
+
+commit 2c2d3f89fd804e811e985d9f29e436ad008da8cf
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Tue May 3 01:37:58 2016 +0000
+
+    actually removed .swp files...
+
+commit ea006baec5bff46c5db9524d4ffb81e07251123e
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Tue May 3 01:36:33 2016 +0000
+
+    removed swp files that shouldn't have been committed
+
+commit 1c8fab7f11d352b878ccf99ac0841a464935a2f0
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Tue May 3 01:26:50 2016 +0000
+
+    added missing gitignore
+
+commit 299ab3c98fbc98d753e61fdec5b77538382be4dd
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Tue May 3 01:14:19 2016 +0000
+
+    unzipped src; branch should be compiling properly
+
+commit 858d8d34308993837e680b7b42eeb0c7dbea4086
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Tue May 3 01:13:02 2016 +0000
+
+    unzipped src
+
+commit ce6579175a24907f71cb77f6ad792ddd849a246a
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Tue May 3 01:12:09 2016 +0000
+
+    trying to resolve commit issues
+
+commit 35d3fef95004ece69045cce052c59988f58d6ebb
+Author: James Stenger <jms2431@columbia.edu>
+Date:   Tue May 3 01:10:48 2016 +0000
+
+    escape commit
+
+commit d4ca48b4f424f60b253a4c29876b01e81f429966
+Author: Jonathan Barrios <jeb2239@columbia.edu>
+Date:   Fri Apr 8 06:11:01 2016 +0000
+
+    README.md edited online with Bitbucket
+
+commit 1a308301f9559b92b9505540621f239566d11653
+Author: Jonathan Barrios <jeb2239@columbia.edu>
+Date:   Fri Feb 12 22:27:08 2016 +0000
+
+    README.md edited online with Bitbucket
+
+commit 39513c83945cd45c6d6e59b9a723345a126d68df
+Author: Jonathan Barrios <jeb2239@columbia.edu>
+Date:   Fri Feb 12 22:26:53 2016 +0000
+
+    README.md edited online with Bitbucket
+
+commit 867b065ed221d47d1f46cd1bb915fb724ea74800
+Author: Jonathan Barrios <jeb2239@columbia.edu>
+Date:   Fri Feb 12 17:10:55 2016 -0500
+
+    removed that thing
+
+commit c4df4df6dce038ef3c6dd6a5a1226218c05684c1
+Author: jmstenger <james.m.stenger@columbia.edu>
+Date:   Fri Jan 29 21:15:09 2016 -0500
+
+    added bla
+
+commit 6e2f3bc683ed5ac52bc1c70b04cfa7d3085d7f85
+Author: Jonathan Barrios <jeb2239@columbia.edu>
+Date:   Fri Jan 29 21:02:54 2016 -0500
+
+    hello

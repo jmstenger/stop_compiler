@@ -1,0 +1,36 @@
+/*
+ * test-primitive1.stp
+ * ==============
+ */
+
+def main = ():Int {
+	var f:Float = 1.0;
+
+	printf("%f\n", f);
+
+	var c:Char = 'a';
+
+	printf("%c\n", c);
+	printf("%d\n",c);
+
+	var b : Bool = true;
+
+	if (b){
+		printf("b is true\n");
+	}
+	else{
+		printf("b is false\n");
+	}
+
+	var a : Bool = !b;
+	
+	if (a){
+		printf("a is true\n");
+	}
+	else{
+		printf("a is false\n");
+	}
+
+	return 0;
+
+}

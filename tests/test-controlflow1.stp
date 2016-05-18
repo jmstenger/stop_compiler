@@ -1,0 +1,13 @@
+/*
+ * test-controlflow1.stp
+ * =====================
+ */
+
+def main = ():Int {
+	if (5 > 4) {
+		printf("First");
+	} else {
+		printf("Second");
+	}
+	return 0;
+}

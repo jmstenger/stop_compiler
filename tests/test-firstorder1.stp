@@ -1,0 +1,15 @@
+// Test-Temp
+
+def f1 = (a:Int):Int {
+	return a + 5;
+}
+
+def f2 = (a:Int):Int {
+	return a + 7;
+}
+
+def main = ():Int {
+	var b:Int;
+	printf("%d %d\n", f1(2), f2(4));
+	return 0;
+}

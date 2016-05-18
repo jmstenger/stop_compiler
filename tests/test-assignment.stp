@@ -1,0 +1,9 @@
+def main = (argc:Int):Int {
+
+	
+	var a:Int = 3;
+	var b=a+2;
+	printf("%d\n",b);
+
+	return 0;
+}

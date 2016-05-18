@@ -1,0 +1,23 @@
+/*
+ * test-increment.stp
+ * =====================
+ */
+
+def main = ():Int {
+	var i:Int = 0;
+
+	while (i < 10) {
+		printf("%d", i);
+		i = i++;
+	}
+
+	printf("\n");
+
+	for (i = 9; i >= 0; i = i--) {
+		printf("%d", i);
+	}
+
+	printf("\n");
+
+	return 0;
+}

@@ -1,0 +1,3 @@
+function main = ():Unit {
+	return 0;
+}

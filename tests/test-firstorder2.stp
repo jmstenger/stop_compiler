@@ -1,0 +1,12 @@
+/*
+ * test-firstorder2.stp
+ * ====================
+ */
+
+def main = ():Int {
+	var a:Int = 0;
+	if (a < 1) {
+		printf("%d\n", a);
+	}
+	return 0;
+}

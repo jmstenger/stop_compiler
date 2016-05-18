@@ -1,0 +1,5 @@
+function main = (args:String[]):Unit {
+	int i = 0;
+	for (j = 0; i < 10; i = i + 1) {} /* j undefined */
+	return 0;
+}

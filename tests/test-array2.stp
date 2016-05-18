@@ -1,0 +1,42 @@
+/*
+ * test-array2.stp
+ * =====================
+ */
+
+def main = ():Int {
+        var arr:Int[] = Int[2]();
+        arr[0] = 1 ;
+        arr[1] = 2;
+	printf("%d", arr[0]);
+	printf("%d\n", arr[1]);
+
+	var a:Int[][] = Int[2][5]();
+        var i:Int;
+        var j:Int;
+
+        for (i=0;i<2;i=i+1){
+                for (j=0;j<5;j=j+1){
+                        a[i][j]=i+j;
+                }
+        }
+
+        for (i=0;i<2;i=i+1){
+        	for (j=0;j<5;j=j+1){
+        		printf("%d",a[i][j]);
+        	}
+        }
+
+        for (i=0;i<2;i=i+1){
+        	for (j=0;j<5;j=j+1){
+        		a[i][j]=i*j;
+        	}
+        }
+
+        for (i=0;i<2;i=i+1){
+        	for (j=0;j<5;j=j+1){
+        		printf("%d",a[i][j]);
+        	}
+        }
+
+        return 0;
+}

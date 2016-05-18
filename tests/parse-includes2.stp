@@ -1,0 +1,3 @@
+#include "moon.stp"
+
+class test-includes2 extends moon { }

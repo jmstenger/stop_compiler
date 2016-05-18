@@ -1,0 +1,9 @@
+def main = ():Int {
+	var j:Int = 3;
+	var lambda_add_i = @(i:Int):Int {
+		return i + j;
+	};
+
+	printf("%d\n", lambda_add_i(5));
+	return 0;
+}

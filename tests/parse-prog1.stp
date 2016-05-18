@@ -1,0 +1,8 @@
+def gcd = (var u:Int, var v:Int):Int {
+	if (v!=0) {
+		gcd(v, u % v)
+	} else {
+		u
+	}
+// Return last statement; must match else with every if
+}

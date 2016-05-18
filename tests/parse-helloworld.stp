@@ -1,0 +1,10 @@
+/*
+ * test-helloworld.stp
+ * ===================
+ * The hello world program for the stop language
+ */
+
+function main = (args:String[]):Unit {
+	// printf is __low_level_print__ from test-allfeatures1
+	printf("Hello, World!");
+}

@@ -1,0 +1,35 @@
+#!/bin/sh
+# vim: filetype=sh
+
+# ================================== #
+# Testing Script for Stop
+# ================================== #
+
+# Step through a list of files
+# Compile, run, and check output of each expected-to-work test
+# Compile and check the error of each expected-to-fail test
+
+STOP="./stop.native"
+STOP_OPTION="-cff"
+TEST_FOLDER="tests"
+
+ulimit -t 30
+
+# Exit script if there is no stop.native executable
+if [ ! -f ${STOP} ]; then
+	echo "${STOP} not found" 1>&2
+	exit 1
+fi
+
+if [ -f test-$1.stp ]; then
+	${STOP} ${STOP_OPTION} test-$1.stp && lli test-$1.ll
+	exit 0
+fi
+
+if [ -f ${TEST_FOLDER}/test-$1.stp ]; then
+	${STOP} ${STOP_OPTION} ${TEST_FOLDER}/test-$1.stp && lli test-$1.ll
+	exit 0
+fi
+
+echo "test-${1}.stp not found in /. or in /${TEST_FOLDER}/"
+exit 1

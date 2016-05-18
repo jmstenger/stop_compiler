@@ -1,0 +1,12 @@
+def lambda_add = (i:Int):Int->Int {
+	var lambda_add_i = @(j:Int):Int {
+		return i + j;
+	};
+	return lambda_add_i;
+}
+
+def main = ():Int {
+	var lambda_add_3 = lambda_add(3);
+	printf("%d\n", lambda_add_3(5));
+	return 0;
+}

@@ -1,0 +1,39 @@
+// Test-Temp
+
+def f1 = (a:Int):Int {
+	return a + 5;
+}
+
+def main = ():Int {
+	printf("%d\n", f1(2));
+	return 0;
+}
+
+/*
+def f1 = (a:Int):Int->Int {
+	var f2 = @(b:Int):Int {
+		return a + b;
+	};
+	return f2;
+}
+
+def main = ():Int {
+	var f:Int->Int = f1(2);
+	return 0;
+}
+*/
+
+/*
+def main = ():Int { 
+	printf("Testing heap allocation\n");
+	var a:Int = 5;
+	var f1 = @(a:Int):Int { 
+		var f2 = @(b:Int):Int {
+			return b * a;
+		};
+		return f2(3);
+	};
+	printf("%d\n", a);
+	return 0;
+}
+*/

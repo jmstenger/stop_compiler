@@ -1,0 +1,2 @@
+int x; float x; bool x; 
+int x = 5; float x = 5; bool x = true;

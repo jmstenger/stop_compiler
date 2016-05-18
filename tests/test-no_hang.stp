@@ -1,0 +1,18 @@
+/*
+ * test-with_issue.stp
+ * ===================
+ * Note: Program hangs after printing 1
+ */
+
+/*
+
+def main = ():Int {
+	var results:Int[];
+	results[0] = 0;
+	results[1] = 1;
+	printf("%d\n", results[0]);
+	printf("%d\n", results[1]);
+	return 0;
+}
+
+*/

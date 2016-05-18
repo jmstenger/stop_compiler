@@ -1,0 +1,3 @@
+function main = (a:String[][]):Unit {
+	return a + 5;
+}

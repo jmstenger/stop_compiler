@@ -1,0 +1,5 @@
+def count = (var arr:Array<int>):Unit {
+	for (var a = 0; a < 10; a++) {
+		print(arr[a])
+	}
+}

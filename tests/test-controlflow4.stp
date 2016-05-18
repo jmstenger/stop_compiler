@@ -1,0 +1,15 @@
+/*
+ * test-controlflow4.stp
+ * =====================
+ */
+
+def main = ():Int {
+	var i:Int = 0;
+
+	while (i < 10) {
+		printf("%d", i);
+		i = i + 1;
+	}
+
+	return 0;
+}

@@ -1,0 +1,12 @@
+/*
+ * test-controlflow3.stp
+ * =====================
+ */
+
+def main = ():Int {
+	var i:Int;
+	for (i = 0; i < 10; i = i + 1) {
+		printf("%d", i);
+	}
+	return 0;
+}

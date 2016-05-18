@@ -1,0 +1,13 @@
+/*
+ * test-expr3.stp
+ * ==============
+ */
+
+def main = ():Int {
+	var a:Float = 5.0;
+	var b:Int = 10;
+	a = a + 2.0;
+	b = b + 3;
+	printf("%f %d\n", a, b);
+	return 0;
+}

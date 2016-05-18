@@ -1,0 +1,9 @@
+/*
+ * test-printf1.stp
+ * ================
+ */
+
+def main = ():Int {
+	printf("%s %d\n", "Testing printf:", 1);
+	return 0;
+}
