@@ -45,7 +45,7 @@ Setup Instructions:
 Installation under Ubuntu 16.04
 -------------------------------
 
-The first step is to get Ocaml & OPAM installed. OPAM is a package manager for OCaml that includes corebuild which we use to compile the project. We also need OPAM in order to install the LLVM Ocaml bindings. Detailed instructions are available at:
+The first step is to get Ocaml & OPAM installed. OPAM is a package manager for OCaml which we need in order to install external libraries like Core and the LLVM Ocaml bindings. Detailed instructions are available at:
 	https://github.com/realworldocaml/book/wiki/Installation-Instructions
 
 
@@ -64,7 +64,7 @@ When I installed the project, the process was:
 
 Having installed OCaml & OPAM, you now need to add dependencies specific to the project:
 
-Install llvm using apt-get. During installation take note of which version of llvm is being installed and then install the appropriate bindings in opam. When I installed the project, for instance, apt-get installed llvm 3.8, so I installed the lllvm 3.8 bindings in opam:
+Install llvm using apt-get. During installation take note of which version of llvm is being installed and then install the appropriate bindings in opam. When I installed the project, apt-get installed llvm 3.8, so I installed the llvm 3.8 bindings in opam:
 
 	sudo apt-get install llvm
 	opam install llvm.3.8
