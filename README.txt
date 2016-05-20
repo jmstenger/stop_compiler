@@ -41,6 +41,7 @@ Ocaml Language References:
 
 Setup Instructions:
 ===================
+https://github.com/realworldocaml/book/wiki/Installation-Instructions
 
 Installation under Ubuntu 14.04 (Pulled from MicroC Setup Instructions)
 -----------------------------------------------------------------------
@@ -66,3 +67,26 @@ Because of issues with installing the LLVM Ocaml Bindings in OPAM we recommend u
 
 The VM we used during our project is available at:
 	https://onedrive.live.com/redir?resid=28C829D0789DE2F2!33649&authkey=!AOA6bnox_KJOxlM&ithint=file%2cgz
+
+Installation: Linux
+-------------------
+
+Commands on Raspberry PI:
+
+
+
+The default LLVM package is 3.4, so we install the matching OCaml library
+using opam.
+
+sudo apt-get install m4 llvm llvm-devel
+
+sudo add-apt-repository --yes ppa:avsm/ppa
+sudo apt-get update -qq
+sudo apt-get install -y opam
+opam init
+
+eval `opam config env`
+
+opam install llvm.3.4
+
+
