@@ -154,7 +154,7 @@ let rec expr_to_sexpr e env = match e with
   | Call(s, e_l)        -> (check_call s e_l env, env)
   | ArrayAccess(e, e_l) -> (check_array_access e e_l env, env)
   | ArrayCreate(d, e_l) -> (check_array_create d e_l env, env)
-  | FunctionLit(f)      -> (check_function_literal f env, env)
+  | FunctionLit(f)      -> (check_function_literal f None env, env)
   | ObjAccess(e1, e2)   -> (check_obj_access e1 e2 env, env)
 
 (* Return Datatype for Binops with an Equality Operator (=, !=) *)
@@ -260,8 +260,16 @@ and check_binop e1 op e2 env =
 
 and check_assign e1 e2 env =
     (* NOTE: may want to keep returned env *)
+
     let (se1, _) = expr_to_sexpr e1 env in
-    let (se2, _) = expr_to_sexpr e2 env in
+
+    (* Need to add function literal as named var so need to pass name of function stored in lhs *)
+    let (se2, _) = match e2 with 
+        FunctionLit(f) -> (match e1 with 
+            Id(s) -> (check_function_literal f (Some(s)) env, env)
+          | _ -> raise E.UnexpectedDatatype)
+      | _ -> expr_to_sexpr e2 env 
+    in
     let type1 = sexpr_to_type_exn se1 in
     let type2 = sexpr_to_type_exn se2 in
     match (type1, type2) with
@@ -359,10 +367,15 @@ and check_array_create d e_l env =
     let sexpr_type = convert_d_to_arraytype d in
     SArrayCreate(d, se_l, sexpr_type)
 
-and check_function_literal fdecl env =
+and check_function_literal fdecl fname_option env =
     let f = StringMap.find_exn env.env_fmap (get_fname_exn env.env_fname) in
     let link_type = Some(Datatype(Object_t(f.fname ^ ".record"))) in
-    let sfdecl = convert_fdecl_to_sfdecl env.env_fmap env.env_cmap fdecl env.env_named_vars link_type env.env_record_to_pass in
+    (* Add the var we are assigning the function to as a named var so it can be called recursively *)
+    let named_vars = match fname_option with
+        Some(fname) -> StringMap.add env.env_named_vars ~key:fname ~data:fdecl.ftype
+      | None -> env.env_named_vars 
+    in
+    let sfdecl = convert_fdecl_to_sfdecl env.env_fmap env.env_cmap fdecl named_vars link_type env.env_record_to_pass in
     higher_order_sfdecls := StringMap.add !higher_order_sfdecls ~key:fdecl.fname ~data:sfdecl;
     SFunctionLit(sfdecl.sfname, sfdecl.sftype)
 
