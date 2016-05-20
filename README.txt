@@ -14,7 +14,7 @@ Lusa Zhan, lz2371, lz2371@columbia.edu
 Attributions:
 =============
 
-Professors Stephen A. Edwards, MicroC Compiler, 
+Professor Stephen A. Edwards, MicroC Compiler, 
 	available at http://www1.cs.columbia.edu/~sedwards/classes/2016/4115-spring/index.html
 
 David Watkins et al., DICE: Distributed Systems Language, 
@@ -45,10 +45,11 @@ Setup Instructions:
 Installation under Ubuntu 16.04
 -------------------------------
 
-The first step is to get Ocaml and OPAM installed. OPAM is a package manager for OCaml that includes corebuild which we use to compile the project. We also need OPAM in order to install the LLVM Ocaml bindings. Detailed instructions are available at:
+The first step is to get Ocaml & OPAM installed. OPAM is a package manager for OCaml that includes corebuild which we use to compile the project. We also need OPAM in order to install the LLVM Ocaml bindings. Detailed instructions are available at:
 	https://github.com/realworldocaml/book/wiki/Installation-Instructions
 
-On Ubuntu 16.04, the process was:
+
+When I installed the project, the process was:
 
 	sudo add-apt-repository ppa:avsm/ppa
 	sudo apt-get update
@@ -61,9 +62,9 @@ On Ubuntu 16.04, the process was:
 
 (Note that you may need to add "eval `opam config env` to your ~/.bashrc)
 
-Having installed OCaml, you now need to add dependencies specific to the project:
+Having installed OCaml & OPAM, you now need to add dependencies specific to the project:
 
-Install Llvm using apt-get. During installation take note of which version of llvm is being installed and then install the appropriate bindings in opam. When I installed the project, for instance, apt-get installed llvm 3.8, so I installed the lllvm 3.8 bindings in opam:
+Install llvm using apt-get. During installation take note of which version of llvm is being installed and then install the appropriate bindings in opam. When I installed the project, for instance, apt-get installed llvm 3.8, so I installed the lllvm 3.8 bindings in opam:
 
 	sudo apt-get install llvm
 	opam install llvm.3.8
