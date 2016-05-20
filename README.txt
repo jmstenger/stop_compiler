@@ -41,52 +41,29 @@ Ocaml Language References:
 
 Setup Instructions:
 ===================
-https://github.com/realworldocaml/book/wiki/Installation-Instructions
 
-Installation under Ubuntu 14.04 (Pulled from MicroC Setup Instructions)
------------------------------------------------------------------------
+Installation under Ubuntu 16.04
+-------------------------------
 
-The default LLVM package is 3.4, so we install the matching OCaml library
-using opam.
+The first step is to get Ocaml and OPAM installed. OPAM is a package manager for OCaml that includes corebuild which we use to compile the project. We also need OPAM in order to install the LLVM Ocaml bindings. Detailed instructions are available at:
+	https://github.com/realworldocaml/book/wiki/Installation-Instructions
 
-sudo apt-get install m4 llvm llvm-devel
+On Ubuntu 16.04, the process was:
 
-sudo add-apt-repository --yes ppa:avsm/ppa
-sudo apt-get update -qq
-sudo apt-get install -y opam
-opam init
+	sudo add-apt-repository ppa:avsm/ppa
+	sudo apt-get update
+	sudo apt-get install curl build-essential m4 ocaml opam	
+	
+	opam init
+	opam switch
+	eval `opam config env`
+	opam install core utop
 
-eval `opam config env`
+(Note that you may need to add "eval `opam config env` to your ~/.bashrc)
 
-opam install llvm.3.4
+Having installed OCaml, you now need to add dependencies specific to the project:
 
-Installation under OS X
------------------------
+Install Llvm using apt-get. During installation take note of which version of llvm is being installed and then install the appropriate bindings in opam. When I installed the project, for instance, apt-get installed llvm 3.8, so I installed the lllvm 3.8 bindings in opam:
 
-Because of issues with installing the LLVM Ocaml Bindings in OPAM we recommend using a virtual development environment. 
-
-The VM we used during our project is available at:
-	https://onedrive.live.com/redir?resid=28C829D0789DE2F2!33649&authkey=!AOA6bnox_KJOxlM&ithint=file%2cgz
-
-Installation: Linux
--------------------
-
-Commands on Raspberry PI:
-
-
-
-The default LLVM package is 3.4, so we install the matching OCaml library
-using opam.
-
-sudo apt-get install m4 llvm llvm-devel
-
-sudo add-apt-repository --yes ppa:avsm/ppa
-sudo apt-get update -qq
-sudo apt-get install -y opam
-opam init
-
-eval `opam config env`
-
-opam install llvm.3.4
-
-
+	sudo apt-get install llvm
+	opam install llvm.3.8
