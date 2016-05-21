@@ -15,29 +15,29 @@ Lusa Zhan, lz2371, lz2371@columbia.edu
 ## Attributions:
 
 Professor Stephen A. Edwards, MicroC Compiler, 
-available [here](http://www1.cs.columbia.edu/~sedwards/classes/2016/4115-spring/index.html)
+available [on the Spring 2016 Course Website](http://www1.cs.columbia.edu/~sedwards/classes/2016/4115-spring/index.html)
 
 David Watkins et al., DICE: Distributed Systems Language, 
-available [here](http://www1.cs.columbia.edu/~sedwards/classes/2015/4115-fall/index.html)
+available [on the Fall 2015 Course Website](http://www1.cs.columbia.edu/~sedwards/classes/2015/4115-fall/index.html)
 
 Jeff Lee, C Language Yacc Grammar, 
 available [here](https://www.lysator.liu.se/c/ANSI-C-grammar-y.html#translation-unit)
 
 ## Tool & API Documentation:
 
-### Ocamllex & Ocamlyacc:
+Ocamllex & Ocamlyacc:
 
 http://caml.inria.fr/pub/docs/manual-ocaml/lexyacc.html
 
-### LLVM Ocaml API:	 
+LLVM Ocaml API:	 
 
 https://www.lysator.liu.se/c/ANSI-C-grammar-y.html#translation-unit
 
-### Jane Street Core Libraries:  
+Jane Street Core Libraries:  
 
 https://ocaml.janestreet.com/ocaml-core/111.28.00/doc/core/
 
-### Ocaml Language References:
+Ocaml Language References:
 
 https://realworldocaml.org/
 
@@ -49,9 +49,7 @@ http://caml.inria.fr/pub/docs/manual-ocaml/language.html
 
 The first step is to get Ocaml & OPAM installed. 
 OPAM is a package manager for OCaml which we need in order to install external libraries like Core and the LLVM Ocaml bindings. 
-Detailed instructions are available at:
-	
-https://github.com/realworldocaml/book/wiki/Installation-Instructions
+Detailed instructions are available at [the Real World Ocaml Wiki](https://github.com/realworldocaml/book/wiki/Installation-Instructions)
 
 When I installed the project, the process was:
 
