@@ -21,7 +21,7 @@ David Watkins et al., DICE: Distributed Systems Language,
 available on [the Fall 2015 Course Website](http://www1.cs.columbia.edu/~sedwards/classes/2015/4115-fall/index.html)
 
 Jeff Lee, C Language Yacc Grammar, 
-available [here](https://www.lysator.liu.se/c/ANSI-C-grammar-y.html#translation-unit)
+available [here](https://www.lysator.liu.se/c/ANSI-C-grammar-y.html)
 
 ## Tool & API Documentation:
 
