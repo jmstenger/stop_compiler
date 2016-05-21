@@ -15,40 +15,43 @@ Lusa Zhan, lz2371, lz2371@columbia.edu
 ## Attributions:
 
 Professor Stephen A. Edwards, MicroC Compiler, 
-available at http://www1.cs.columbia.edu/~sedwards/classes/2016/4115-spring/index.html
+available [here](http://www1.cs.columbia.edu/~sedwards/classes/2016/4115-spring/index.html)
 
 David Watkins et al., DICE: Distributed Systems Language, 
-available at http://www1.cs.columbia.edu/~sedwards/classes/2015/4115-fall/index.html
+available [here](http://www1.cs.columbia.edu/~sedwards/classes/2015/4115-fall/index.html)
 
 Jeff Lee, C Language Yacc Grammar, 
-available at https://www.lysator.liu.se/c/ANSI-C-grammar-y.html#translation-unit
+available [here](https://www.lysator.liu.se/c/ANSI-C-grammar-y.html#translation-unit)
 
 ## Tool & API Documentation:
 
-Ocamllex & Ocamlyacc:
+### Ocamllex & Ocamlyacc:
 
 http://caml.inria.fr/pub/docs/manual-ocaml/lexyacc.html
 
-LLVM Ocaml API:	 
+### LLVM Ocaml API:	 
 
 https://www.lysator.liu.se/c/ANSI-C-grammar-y.html#translation-unit
 
-Jane Street Core Libraries:  
+### Jane Street Core Libraries:  
 
 https://ocaml.janestreet.com/ocaml-core/111.28.00/doc/core/
 
-Ocaml Language References:
+### Ocaml Language References:
 
 https://realworldocaml.org/
+
 http://caml.inria.fr/pub/docs/manual-ocaml/language.html
 
 ## Setup Instructions:
 
 ### Installation under Ubuntu 16.04
 
-The first step is to get Ocaml & OPAM installed. OPAM is a package manager for OCaml which we need in order to install external libraries like Core and the LLVM Ocaml bindings. Detailed instructions are available at:
-	https://github.com/realworldocaml/book/wiki/Installation-Instructions
-
+The first step is to get Ocaml & OPAM installed. 
+OPAM is a package manager for OCaml which we need in order to install external libraries like Core and the LLVM Ocaml bindings. 
+Detailed instructions are available at:
+	
+https://github.com/realworldocaml/book/wiki/Installation-Instructions
 
 When I installed the project, the process was:
 
@@ -61,11 +64,13 @@ When I installed the project, the process was:
 	eval `opam config env`
 	opam install core utop
 
-(Note that you may need to add eval `opam config env` to your ~/.bashrc)
+(Note that you may need to add the "opam config env" line to your ~/.bashrc)
 
 Having installed OCaml & OPAM, you now need to add dependencies specific to the project:
 
-Install llvm using apt-get. During installation take note of which version of llvm is being installed and then install the appropriate bindings in opam. When I installed the project, apt-get installed llvm 3.8, so I installed the llvm 3.8 bindings in opam:
+Install llvm using apt-get. 
+During installation take note of which version of llvm is being installed and then install the appropriate bindings in OPAM. 
+When I installed the project, apt-get installed llvm 3.8, so I installed the llvm 3.8 bindings in OPAM:
 
 	sudo apt-get install llvm
 	opam install llvm.3.8
