@@ -14,30 +14,33 @@ Lusa Zhan, lz2371, lz2371@columbia.edu
 
 ## Attributions:
 
-Professor Stephen A. Edwards, MicroC Compiler, available at http://www1.cs.columbia.edu/~sedwards/classes/2016/4115-spring/index.html
+Professor Stephen A. Edwards, MicroC Compiler, 
+available at http://www1.cs.columbia.edu/~sedwards/classes/2016/4115-spring/index.html
 
-David Watkins et al., DICE: Distributed Systems Language, available at http://www1.cs.columbia.edu/~sedwards/classes/2015/4115-fall/index.html
+David Watkins et al., DICE: Distributed Systems Language, 
+available at http://www1.cs.columbia.edu/~sedwards/classes/2015/4115-fall/index.html
 
-Jeff Lee, C Language Yacc Grammar, available at https://www.lysator.liu.se/c/ANSI-C-grammar-y.html#translation-unit
+Jeff Lee, C Language Yacc Grammar, 
+available at https://www.lysator.liu.se/c/ANSI-C-grammar-y.html#translation-unit
 
 ## Tool & API Documentation:
 
 Ocamllex & Ocamlyacc:
 
-	http://caml.inria.fr/pub/docs/manual-ocaml/lexyacc.html
+http://caml.inria.fr/pub/docs/manual-ocaml/lexyacc.html
 
 LLVM Ocaml API:	 
 
-	https://www.lysator.liu.se/c/ANSI-C-grammar-y.html#translation-unit
+https://www.lysator.liu.se/c/ANSI-C-grammar-y.html#translation-unit
 
 Jane Street Core Libraries:  
 
-	https://ocaml.janestreet.com/ocaml-core/111.28.00/doc/core/
+https://ocaml.janestreet.com/ocaml-core/111.28.00/doc/core/
 
 Ocaml Language References:
 
-	https://realworldocaml.org/
-	http://caml.inria.fr/pub/docs/manual-ocaml/language.html
+https://realworldocaml.org/
+http://caml.inria.fr/pub/docs/manual-ocaml/language.html
 
 ## Setup Instructions:
 
@@ -58,7 +61,7 @@ When I installed the project, the process was:
 	eval `opam config env`
 	opam install core utop
 
-(Note that you may need to add `eval `opam config env`` to your ~/.bashrc)
+(Note that you may need to add eval `opam config env` to your ~/.bashrc)
 
 Having installed OCaml & OPAM, you now need to add dependencies specific to the project:
 
