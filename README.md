@@ -1,18 +1,15 @@
-==========================================
-Compiler for the Stop Programming Language
-==========================================
+# Stop Programming Language
 
 This repo is based off a project I worked on as part of the COMS 4115: Programming Languages & Translators course taught by Professor Stephen A. Edwards at Columbia University. The aim of the project was to design and implement a functional, object-oriented language which compiled to the LLVM Intermediate Representation (LLVM IR). In implementing the compiler my team and I utilized a variety of tools including Ocamllex, Ocamlyacc, the LLVM Ocaml API, and the Jane Street Core Ocaml Libraries.
 
-Original Contributors:
-======================
+## Original Contributors:
+
 James Maxwell Stenger, jms2431, jms2431@columbia.edu
 Jillian Knoll, jak2246, jak2246@columbia.edu
 Jonathan Elias Barios, jeb2239, jeb2239@columbia.edu
 Lusa Zhan, lz2371, lz2371@columbia.edu
 
-Attributions:
-=============
+## Attributions:
 
 Professor Stephen A. Edwards, MicroC Compiler, 
 	available at http://www1.cs.columbia.edu/~sedwards/classes/2016/4115-spring/index.html
@@ -23,8 +20,7 @@ David Watkins et al., DICE: Distributed Systems Language,
 Jeff Lee, C Language Yacc Grammar, 
 	available at https://www.lysator.liu.se/c/ANSI-C-grammar-y.html#translation-unit
 
-Tool & API Documentation:
-=========================
+## Tool & API Documentation:
 
 Ocamllex & Ocamlyacc:
 	http://caml.inria.fr/pub/docs/manual-ocaml/lexyacc.html
@@ -39,11 +35,9 @@ Ocaml Language References:
 	https://realworldocaml.org/
 	http://caml.inria.fr/pub/docs/manual-ocaml/language.html
 
-Setup Instructions:
-===================
+## Setup Instructions:
 
-Installation under Ubuntu 16.04
--------------------------------
+### Installation under Ubuntu 16.04
 
 The first step is to get Ocaml & OPAM installed. OPAM is a package manager for OCaml which we need in order to install external libraries like Core and the LLVM Ocaml bindings. Detailed instructions are available at:
 	https://github.com/realworldocaml/book/wiki/Installation-Instructions
