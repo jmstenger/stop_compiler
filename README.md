@@ -1,4 +1,4 @@
-# Stop Programming Language
+# The "Stop" Programming Language
 
 This repository is based off a project I worked on as part of the COMS 4115: Programming Languages & Translators course taught by Professor Stephen A. Edwards at Columbia University. The aim of the project was to design and implement a functional, object-oriented language which compiled to the LLVM Intermediate Representation (LLVM IR). In implementing the compiler my team and I utilized a variety of tools including Ocamllex, Ocamlyacc, the LLVM Ocaml API, and the Jane Street Core Ocaml Libraries.
 
